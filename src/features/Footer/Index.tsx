@@ -1,5 +1,6 @@
 import  Link  from "next/link";
 import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import About from "@/pages/About";
 
 export default function Footer() {
     return (
@@ -29,17 +30,17 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/catalog" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
+                                <Link href="/Catalog" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
                                     Catalog
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/about" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
+                                <Link href="/About" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
                                     About Us
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/blog" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
+                                <Link href="/Blog" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
                                     Blog
                                 </Link>
                             </li>
@@ -51,7 +52,7 @@ export default function Footer() {
                         <h4 className="text-white font-bold mb-4">Customer Service</h4>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/contact" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
+                                <Link href="/Contact" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
                                     Contact Us
                                 </Link>
                             </li>

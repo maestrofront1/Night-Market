@@ -1,8 +1,12 @@
 "use client"
 
 import Link  from "next/link";
-import { ShoppingCart, Menu, X, User } from "lucide-react";
+import {ShoppingCart, Menu, X, User, Contact} from "lucide-react";
 import { useState } from "react";
+import Catalog from "@/pages/Catalog";
+import About from "@/pages/About";
+import Blog from "@/pages/Blog";
+import Cart from "@/pages/Cart";
 
 export default function Header ()   {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,16 +31,16 @@ export default function Header ()   {
                         <Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors font-medium">
                             Home
                         </Link>
-                        <Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors font-medium">
-                            Catalog
+                        <Link href="/Catalog" className="text-gray-300 hover:text-yellow-400 transition-colors font-medium">
+                               Catalog
                         </Link>
-                        <Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors font-medium">
+                        <Link href="/About" className="text-gray-300 hover:text-yellow-400 transition-colors font-medium">
                             About Us
                         </Link>
-                        <Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors font-medium">
+                        <Link href="/Blog" className="text-gray-300 hover:text-yellow-400 transition-colors font-medium">
                             Blog
                         </Link>
-                        <Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors font-medium">
+                        <Link href="/Contact" className="text-gray-300 hover:text-yellow-400 transition-colors font-medium">
                             Contact
                         </Link>
                     </nav>
@@ -46,7 +50,7 @@ export default function Header ()   {
                         <Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors">
                             <User className="w-6 h-6" />
                         </Link>
-                        <Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                        <Link href="/Cart" className="text-gray-300 hover:text-yellow-400 transition-colors">
                             <ShoppingCart className="w-6 h-6" />
                         </Link>
                         <button
@@ -65,15 +69,19 @@ export default function Header ()   {
                             Home
                         </Link>
                         <Link href="/" className="block text-gray-300 hover:text-yellow-400 transition-colors font-medium py-2">
+                            <Catalog />
                             Catalog
                         </Link>
                         <Link href="/" className="block text-gray-300 hover:text-yellow-400 transition-colors font-medium py-2">
+                            <About/>
                             About Us
                         </Link>
                         <Link href="/" className="block text-gray-300 hover:text-yellow-400 transition-colors font-medium py-2">
+                            <Blog/>
                             Blog
                         </Link>
                         <Link href="/" className="block text-gray-300 hover:text-yellow-400 transition-colors font-medium py-2">
+                            <Contact/>
                             Contact
                         </Link>
                     </nav>
