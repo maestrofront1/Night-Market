@@ -47,7 +47,7 @@ export default function Header ()   {
 
                     {/* Cart, Account and Mobile Menu */}
                     <div className="flex items-center gap-4">
-                        <Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                        <Link href="/Account" className="text-gray-300 hover:text-yellow-400 transition-colors">
                             <User className="w-6 h-6" />
                         </Link>
                         <Link href="/Cart" className="text-gray-300 hover:text-yellow-400 transition-colors">
